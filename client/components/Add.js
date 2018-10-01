@@ -94,7 +94,7 @@ render() {
    if(this.state.messageFromServer == ''){
       return (
         <div>
-      <Button bsStyle="success" bsSize="small" onClick={this.openModal}><span className="glyphicon glyphicon-plus"></span></Button>
+      <Button bsStyle="success" bsSize="small" onClick={this.openModal}><span className="button-page-load"></span></Button>
           <Modal
             isOpen={this.state.modalIsOpen}
             onRequestClose={this.closeModal}
