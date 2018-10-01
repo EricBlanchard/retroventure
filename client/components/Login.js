@@ -16,12 +16,15 @@ class Login extends React.Component {
     if (this.state.messageFromServer == '') {
       return (
         <div className="login">
-          <p>This is the login page!</p>
-          <div>
+          <p className="login-title">Adventro</p>
+          <p className="login-caption">A space adventure retrospective...</p>
+          <img src="../resources/images/bg-moon.png" className="login-moon"></img>
+          <img src="../resources/images/rocket.png" className="login-spaceship"></img>
+          <Button className="login-button" >
             <Link to={{pathname: '/RetroSelection' }} style={{ textDecoration: 'none' }}>
-              <Button bsStyle="danger" bsSize="large" ><p>I AM A BUTTON PRESS ME</p></Button>
+              <p className="login-button-text">Begin</p>
             </Link>
-            </div>
+          </Button>
         </div>
       )
     }

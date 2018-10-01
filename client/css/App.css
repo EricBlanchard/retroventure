@@ -71,7 +71,82 @@ fieldset{
    height: 50px;
 }
 .login{
-    background-color: black;
+    background-image: url("../resources/images/bg-body.png");
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     height: 100%;
     width: 100%;
 }
+.login-moon{
+    width: 350px;
+    height: 373px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.login-spaceship{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 105px;
+    left: -75px;
+    transform: translate(50vw, 0);
+}
+.login-button{
+    width: 304px;
+    height: 80px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: transparent;
+    border: solid 3px #63d1e2;
+    left: -152px;
+    transform: translate(50vw, 50vh);
+}
+.login-button-text{
+    width: 276px;
+    height: 43px;
+    font-family: Helvetica;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #63d1e2;
+}
+.login-title {
+    width: 668px;
+    height: 189px;
+    position: absolute;
+    font-family: GTPressuraMono;
+    font-size: 144px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ecc12c;
+    left: -334px;
+    transform: translate(50vw, 0);
+  }
+  .login-caption {
+    width: 668px;
+    height: 168px;
+    position: absolute;
+    font-family: Helvetica;
+    font-size: 70px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    left: -334px;
+    transform: translate(50vw, 30vh);
+  }

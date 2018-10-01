@@ -35731,23 +35731,26 @@ var Login = function (_React$Component) {
           { className: 'login' },
           _react2.default.createElement(
             'p',
-            null,
-            'This is the login page!'
+            { className: 'login-title' },
+            'Adventro'
           ),
           _react2.default.createElement(
-            'div',
-            null,
+            'p',
+            { className: 'login-caption' },
+            'A space adventure retrospective...'
+          ),
+          _react2.default.createElement('img', { src: '../resources/images/bg-moon.png', className: 'login-moon' }),
+          _react2.default.createElement('img', { src: '../resources/images/rocket.png', className: 'login-spaceship' }),
+          _react2.default.createElement(
+            _reactBootstrap.Button,
+            { className: 'login-button' },
             _react2.default.createElement(
               _reactRouterDom.Link,
               { to: { pathname: '/RetroSelection' }, style: { textDecoration: 'none' } },
               _react2.default.createElement(
-                _reactBootstrap.Button,
-                { bsStyle: 'danger', bsSize: 'large' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'I AM A BUTTON PRESS ME'
-                )
+                'p',
+                { className: 'login-button-text' },
+                'Begin'
               )
             )
           )
