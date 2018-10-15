@@ -21,7 +21,7 @@ class Login extends React.Component {
           <img src="../resources/images/bg-moon.png" className="login-moon"></img>
           <img src="../resources/images/rocket.png" className="login-spaceship"></img>
           <Button className="login-button" >
-            <Link to={{pathname: '/RetroSelection' }} style={{ textDecoration: 'none' }}>
+            <Link to={{pathname: '/RetroSelection/RetroSelection' }} style={{ textDecoration: 'none' }}>
               <p className="login-button-text">Begin</p>
             </Link>
           </Button>
