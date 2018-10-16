@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export default class RetroSelectionButton extends React.Component {
   constructor() {
@@ -12,13 +13,15 @@ export default class RetroSelectionButton extends React.Component {
     return (
       <React.Fragment>
           <RetroSelectionButtonWrapper>
-            <RetroSelectionImageWrapper>
-                <RetroSelectionImage src={this.props.imageUrl}></RetroSelectionImage>
-            </RetroSelectionImageWrapper>
-            <RetroSelectionButtonTextWrapper>
-                <RetroSelectionChapterText>{this.props.chapterTitle}</RetroSelectionChapterText>
-                <RetroSelectionText>{this.props.buttonText}</RetroSelectionText>
-            </RetroSelectionButtonTextWrapper>
+            <Link to={{pathname: '/Chapter' }} style={{ textDecoration: 'none' }}>
+              <RetroSelectionImageWrapper>
+                  <RetroSelectionImage src={this.props.imageUrl}></RetroSelectionImage>
+              </RetroSelectionImageWrapper>
+              <RetroSelectionButtonTextWrapper>
+                  <RetroSelectionChapterText>{this.props.chapterTitle}</RetroSelectionChapterText>
+                  <RetroSelectionText>{this.props.buttonText}</RetroSelectionText>
+              </RetroSelectionButtonTextWrapper>
+            </Link>
           </RetroSelectionButtonWrapper>
       </React.Fragment>
     )
