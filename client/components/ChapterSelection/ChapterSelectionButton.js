@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export default class RetroSelectionButton extends React.Component {
+export default class ChapterSelectionButton extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -12,17 +12,17 @@ export default class RetroSelectionButton extends React.Component {
   render() {
     return (
       <React.Fragment>
-          <RetroSelectionButtonWrapper>
+          <ChapterSelectionButtonWrapper>
             <Link to={{pathname: '/Chapter' }} style={{ textDecoration: 'none' }}>
-              <RetroSelectionImageWrapper>
-                  <RetroSelectionImage src={this.props.imageUrl}></RetroSelectionImage>
-              </RetroSelectionImageWrapper>
-              <RetroSelectionButtonTextWrapper>
-                  <RetroSelectionChapterText>{this.props.chapterTitle}</RetroSelectionChapterText>
-                  <RetroSelectionText>{this.props.buttonText}</RetroSelectionText>
-              </RetroSelectionButtonTextWrapper>
+              <ChapterSelectionImageWrapper>
+                  <ChapterSelectionImage src={this.props.imageUrl}></ChapterSelectionImage>
+              </ChapterSelectionImageWrapper>
+              <ChapterSelectionButtonTextWrapper>
+                  <ChapterSelectionChapterText>{this.props.chapterTitle}</ChapterSelectionChapterText>
+                  <ChapterSelectionText>{this.props.buttonText}</ChapterSelectionText>
+              </ChapterSelectionButtonTextWrapper>
             </Link>
-          </RetroSelectionButtonWrapper>
+          </ChapterSelectionButtonWrapper>
       </React.Fragment>
     )
   }
@@ -30,7 +30,7 @@ export default class RetroSelectionButton extends React.Component {
 
 //  Styles
 
-const RetroSelectionChapterText = styled.p`
+const ChapterSelectionChapterText = styled.p`
   width: 379px;
   height: 29px;
   font-family: Helvetica;
@@ -43,7 +43,7 @@ const RetroSelectionChapterText = styled.p`
   color: #0e1126;
 `;
 
-const RetroSelectionText = styled.p`
+const ChapterSelectionText = styled.p`
   width: 379px;
   height: 22px;
   font-family: Helvetica;
@@ -56,7 +56,7 @@ const RetroSelectionText = styled.p`
   color: #0e1126;
 `;
 
-const RetroSelectionButtonWrapper = styled.button`
+const ChapterSelectionButtonWrapper = styled.button`
   display: flex;
   width: 668px;
   height: 112px;
@@ -66,17 +66,17 @@ const RetroSelectionButtonWrapper = styled.button`
   background-color: #ffffff;
 `;
 
-const RetroSelectionButtonTextWrapper = styled.div`
+const ChapterSelectionButtonTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: left;
   text-align: left;
 `;
 
-const RetroSelectionImage = styled.img`
+const ChapterSelectionImage = styled.img`
 `;
 
-const RetroSelectionImageWrapper = styled.div`
+const ChapterSelectionImageWrapper = styled.div`
     height: 80px;
     width: 108px;
 `;

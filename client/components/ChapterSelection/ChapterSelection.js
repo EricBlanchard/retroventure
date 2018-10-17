@@ -1,8 +1,8 @@
 import React from 'react';
-import RetroSelectionButton from '../RetroSelection/RetroSelectionButton'
+import ChapterSelectionButton from '../ChapterSelection/ChapterSelectionButton'
 import styled from 'styled-components';
 
-export default class RetroSelection extends React.Component {
+export default class ChapterSelection extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -30,12 +30,12 @@ export default class RetroSelection extends React.Component {
     }
     return (
       <React.Fragment>
-        <RetroSelectionBackground>
+        <ChapterSelectionBackground>
           <Title>Where we were last?</Title>
-          <RetroSelectionButton {...props.img1}></RetroSelectionButton>
-          <RetroSelectionButton {...props.img2}></RetroSelectionButton>
-          <RetroSelectionButton {...props.img3}></RetroSelectionButton>
-        </RetroSelectionBackground>
+          <ChapterSelectionButton {...props.img1}></ChapterSelectionButton>
+          <ChapterSelectionButton {...props.img2}></ChapterSelectionButton>
+          <ChapterSelectionButton {...props.img3}></ChapterSelectionButton>
+        </ChapterSelectionBackground>
       </React.Fragment>
     )
   }
@@ -57,7 +57,7 @@ const Title = styled.p`
   color: #ecc12c;
 `;
 
-const RetroSelectionBackground = styled.div`
+const ChapterSelectionBackground = styled.div`
   width: 1440px;
   height: 1024px;
   background-blend-mode: darken;

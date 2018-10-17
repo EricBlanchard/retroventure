@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ProgressBar from './ProgressBar';
 
 export default class Chapter extends React.Component {
   constructor() {
@@ -12,7 +13,8 @@ export default class Chapter extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <NormalText>this a chapter template</NormalText>
+        <ProgressBar></ProgressBar>
+        <SpeechText>this a chapter template</SpeechText>
       </React.Fragment>
     )
   }
@@ -20,7 +22,7 @@ export default class Chapter extends React.Component {
 
 //  Styles
 
-const NormalText = styled.p`
+const SpeechText = styled.p`
   width: 668px;
   height: 47px;
   font-family: GTPressuraMono;
