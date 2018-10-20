@@ -24,5 +24,8 @@
   "scripts": {
     "webpack": "webpack",
     "start": "npm run webpack && nodemon --exec babel-node -- bin/www --watch client --watch server"
+  },
+  "devDependencies": {
+    "open-browser-webpack-plugin": "0.0.5"
   }
 }

@@ -50469,7 +50469,8 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n  width: 1129px;\n  height: 40px;\n  border-radius: 22.5px;\n  background-color: #fffbe5;\n'], ['\n  width: 1129px;\n  height: 40px;\n  border-radius: 22.5px;\n  background-color: #fffbe5;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  width: 1129px;\n  height: 40px;\n  border-radius: 22.5px;\n  background-color: #fffbe5;\n'], ['\n  width: 1129px;\n  height: 40px;\n  border-radius: 22.5px;\n  background-color: #fffbe5;\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  width: 150px;\n  height: 150px;\n  transform: rotate(-270deg);\n'], ['\n  width: 150px;\n  height: 150px;\n  transform: rotate(-270deg);\n']);
 
 var _react = __webpack_require__(0);
 
@@ -50512,7 +50513,12 @@ var Login = function (_React$Component) {
         return _react2.default.createElement(
           _react2.default.Fragment,
           null,
-          _react2.default.createElement(StyledProgressBar, null)
+          _react2.default.createElement(
+            StyledProgressBar,
+            null,
+            _react2.default.createElement(ProgressBarImage, { src: '../../resources/images/rocket.png' }),
+            _react2.default.createElement(Planet, null)
+          )
         );
       } else {
         return _react2.default.createElement(
@@ -50535,6 +50541,8 @@ var Login = function (_React$Component) {
 
 exports.default = Login;
 var StyledProgressBar = _styledComponents2.default.div(_templateObject);
+
+var ProgressBarImage = _styledComponents2.default.img(_templateObject2);
 
 /***/ })
 /******/ ]);
