@@ -1,8 +1,71 @@
-.body{
-    width:100%;
-    height:100%;
-    background-color: black;
+/* V's changes */
+
+html, body {
+    height: 100%;
 }
+
+body {
+    background: url(../resources/images/bg-body.png) repeat;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font: 14px/18px "Helvetica", sans-serif;
+}
+
+.flex-container {
+    background: url(../resources/images/bg-moon.png) top right no-repeat;
+    background-size: 30%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-content {
+    text-align: center;
+}
+
+h1 {
+    color: #ECC12C;
+    margin: auto;
+    font: normal 80px/90px "GT Pressura Mono", "arial", sans-serif;
+}
+
+h2 {
+    color: #fff;
+    font: 100 32px/24px "Helvetica", sans-serif;
+}
+
+.block {
+    display: block;
+}
+
+.btn-ghost {
+    padding: 15px 20px;
+    color: #63D1E2;
+    text-decoration: none;
+    border: 2px solid #63D1E2;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 30px, 0); }
+}
+
+.rocket {
+    animation: bounce 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+/* -------- */
+
 #root{
     width: 100%;
     height: 100%;
