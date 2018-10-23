@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import Login from './Login'
+import Title from '../components/Title/Title'
 
 export default class App extends React.Component {
   constructor() {
@@ -11,7 +11,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Login />
+        <Title />
       </div>
     );
   }
