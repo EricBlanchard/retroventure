@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Redirect } from 'react-router';
 import styled, { keyframes } from 'styled-components';
 
 export default class Title extends React.Component {
@@ -9,20 +10,20 @@ export default class Title extends React.Component {
       username: '',
       password: '',
       messageFromServer: '',
-      modalIsOpen: false
+      modalIsOpen: false,
+      redirect: false
     }
   }
   render() {
-    if (this.state.messageFromServer == '') {
+    if (this.state.messageFromServer == '' && !this.state.redirect) {
       return (
         <Moon>
           <FlexContent>
             <h1>Retroventure</h1>
             <h2>A space adventure retrospective...</h2>
-            <GhostBtn>
-              <Link to={{pathname: '/ChapterSelection' }} style={{ textDecoration: 'none' }}>
-                Let's Begin
-              </Link>
+            <GhostBtn onClick={(event) => {
+              this.setState({redirect: 'true'})}}>
+              Let's Begin
             </GhostBtn>
             <br></br>
             <br></br>
@@ -31,13 +32,10 @@ export default class Title extends React.Component {
         </Moon>
       )
     }
-    else {
+    else if (this.state.redirect) {
       return (
-        <div>
-          <React.Fragment>
-            <p>{this.state.messageFromServer}</p>
-          </React.Fragment>
-        </div>
+        <Redirect to={{pathname: '/ChapterSelection' }}>
+        </Redirect>
       )
     }
   }
